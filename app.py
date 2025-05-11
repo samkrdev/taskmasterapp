@@ -438,8 +438,8 @@ def main():
                 col1, col2 = st.columns(2)
 
                 col1.image("plots/rewards_history.png", caption="Rewards History")
-                col2.image("plots/epsilon_decay.png", caption="Epsilon Decay")
-
+                # col2.image("plots/epsilon_decay.png", caption="Epsilon Decay")
+                col2.header("Taskmaster")
                 st.subheader("Best Methods by Metric")
                 best_methods_df = pd.DataFrame(
                     list(results["best_methods"].items()),
